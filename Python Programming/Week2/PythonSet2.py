@@ -27,8 +27,6 @@ does all of the following, each on a separate line:
 """  
 #%%      
 
-# Done
-
 def problem2_1():
     # Declaration Part
     lis = list(range(20, 30))
@@ -42,8 +40,6 @@ def problem2_1():
     # Task -> (c)
     for i in range(len(lis)):
         print(lis[i], end=" ")
-
-
 
 #%%
 """
@@ -78,8 +74,6 @@ you cannot use alist as a variable inside your function.
 
 alist = ["a","e","i","o","u","y"]
 blist = ["alpha", "beta", "gamma", "delta", "epsilon", "eta", "theta"] 
-
-# Done
 
 def problem2_2(my_list):
     # Task 0
@@ -150,8 +144,6 @@ so don't use the variable newEngland inside your function.
 newEngland = ["Maine","New Hampshire","Vermont", "Rhode Island", 
 "Massachusetts","Connecticut"]
 
-# Done
-
 def problem2_3(ne):
     for i in range(0,len(ne)):
         print(ne[i],"has",len(ne[i]),"letters.")
@@ -169,7 +161,9 @@ everyone generates the same random numbers and will agree with the grader's
 list of random numbers. Print out the list (in list form).
 """
 #%%
+
 import random
+
 def problem2_4():
     """ Make a list of 10 random real's between 30 and 35 """
     number = [] # Empty List
@@ -228,8 +222,6 @@ Problem 2_5:
 """
 import random
 
-# Done
-
 def problem2_5():
     """ Simulates rolling a die 10 times."""
     # Setting the seed makes the random numbers always the same
@@ -238,8 +230,6 @@ def problem2_5():
     for i in range(10):
         pips = random.randint(1,6)
         print(pips)
-
-
 
 #%%
 """
@@ -251,9 +241,8 @@ program that will roll 2 dice and produce the outcome. This time let's roll
 the two dice 100 times. Print the outcomes one outcome per line.
 """
 #%%
-import random
 
-# Done
+import random
 
 def problem2_6():
     """ Simulates rolling 2 dice 100 times """
@@ -265,8 +254,6 @@ def problem2_6():
         pip2 = random.randint(1,6)
         outcome = pip1 + pip2
         print(outcome)
-
-
    
 #%%
 """
@@ -325,8 +312,6 @@ Area of a triangle with sides 9.0 12.0 15.0 is 54.0
 """
 #%%
 
-# Done
-
 def problem2_7():
     """ computes area of triangle using Heron's formula. """
     a = float(input("Enter length of side one: "))
@@ -338,7 +323,6 @@ def problem2_7():
     # Heron's formula
     area = (s*(s-a)*(s-b)*(s-c))**(0.5)
     print("Area of a triangle with sides",round(a,1),round(b,1),round(c,1),"is",round(area,1))
-
 
 #%%
 """ 
@@ -359,8 +343,6 @@ hourly_temp = [40.0, 39.0, 37.0, 34.0, 33.0, 34.0, 36.0, 37.0, 38.0, 39.0, \
                40.0, 41.0, 44.0, 45.0, 47.0, 48.0, 45.0, 42.0, 39.0, 37.0, \
                36.0, 35.0, 33.0, 32.0]
 #%%
-
-# Done
 
 def problem2_8(temp_list):
 
