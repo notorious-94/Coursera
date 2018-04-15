@@ -192,6 +192,20 @@ or cmd.exe), it won't be runnable as our usual functions are by entering
 Shift-Enter.  You should use the File menu in Spyder to create you own file.
 But, if you prefer, there is a starter file called problem3_6starter.py.
 
+# Solution program 3_6.py
+import sys
+
+infile = open(sys.argv[1])
+outfile = open(sys.argv[2],"w")
+
+for line in infile:
+    l = line.strip("\n")
+    outfile.write(str(len(l)))
+    outfile.write("\n")
+
+infile.close()
+outfile.close()
+
 Here is a run of my solution program using the HumptyDumpty.txt file. The run
 is followed by a printout of HumptyDumpty.txt and the written file
 HumptyLength.txt. Note that your program does not print anything out.  It does
